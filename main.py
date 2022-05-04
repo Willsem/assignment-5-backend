@@ -51,6 +51,6 @@ if __name__ == '__main__':
     ws.run(
         app,
         host='0.0.0.0', # listen to outside requests 
-        port=int(os.getenv('PORT', '6000')),
+        port=int(os.getenv('PORT', '5000')),
         debug=True,
     )
