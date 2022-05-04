@@ -46,6 +46,10 @@ def on_message(msg):
 def list_rooms():
     return jsonify(list(all_rooms.keys()))
 
+@app.route('/create/<name>')
+def add_room(name):
+    all_rooms[name] = 0
+
 
 if __name__ == '__main__':
     ws.run(
