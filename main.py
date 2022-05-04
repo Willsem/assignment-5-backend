@@ -49,6 +49,7 @@ def list_rooms():
 @app.route('/create/<name>')
 def add_room(name):
     all_rooms[name] = 0
+    return jsonify({'message': 'success'})
 
 
 if __name__ == '__main__':
